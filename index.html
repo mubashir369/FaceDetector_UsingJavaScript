@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face detector</title>
+    <script defer src="./face-api.min.js"></script>
+    <script defer src="./script.js"></script>
 </head>
 <body>
+    <style>
+        canvas{
+            position: absolute;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
     
-    
-    <script src="./face-api.min.js"></script>
-    <script src="./script.js"></script>
+
+    <video id="video" width="720" height="560" autoplay muted ></video>
+  
 </body>
 </html>
